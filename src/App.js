@@ -5,7 +5,7 @@ import SiderBar from './components/Navigation/SiderBar';
 
 function App() {
   return (
-    <div className="wapper">
+    <div id="wrapper">
         <SiderBar />
         <Home />
     </div>
