@@ -5,7 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // SBAdmin 2
+// import $ from "jquery";
 import './assets/vendor/jquery/jquery.min.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './assets/vendor/bootstrap/js/bootstrap.bundle.min.js';
 import './assets/vendor/jquery-easing/jquery.easing.min.js';
 import './assets/scss/sb-admin-2.scss';
@@ -14,7 +17,9 @@ import './assets/css/sb-admin-2.min.css';
 // import './assets/js/sb-admin-2.min.js';
 
 window.React = React;
-// window.$ = window.jQuery = require('jquery');
+window.jQuery = require('jquery');
+
+// var jQueryEasing = require("jquery-easing");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

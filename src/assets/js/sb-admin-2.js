@@ -53,4 +53,4 @@
     e.preventDefault();
   });
 
-})(jQuery); // End of use strict
+})(jquery); // End of use strict

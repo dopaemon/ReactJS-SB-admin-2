@@ -201,7 +201,7 @@ function TopBar() {
 
             </ul>
 
-        </nav> 
+        </nav>
     )
 }
 
