@@ -10507,6 +10507,18 @@ a:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width:768px) {
+  .sidebar {
+      width: 0 !important;
+      overflow: hidden;
+  }
+
+  .sidebar.toggled {
+      width: 6.5rem !important;
+      overflow: visible;
+  }
+}
+
 @media (min-width: 768px) {
   .sidebar {
     width: 14rem !important;
@@ -10540,7 +10552,7 @@ a:focus {
   }
   .sidebar .nav-item .nav-link i {
     font-size: 0.85rem;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
   }
   .sidebar .nav-item .nav-link span {
     font-size: 0.85rem;
@@ -10682,7 +10694,7 @@ a:focus {
 }
 
 .sidebar-dark hr.sidebar-divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.60);
 }
 
 .sidebar-dark .sidebar-heading {

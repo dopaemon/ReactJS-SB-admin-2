@@ -11,7 +11,7 @@ function SiderBar() {
             $("#collapseUtilities").removeClass("show");
         }
     };
-
+    
     return (
         // <!-- Sidebar -->
         <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -126,14 +126,7 @@ function SiderBar() {
             {/* <!-- Sidebar Toggler (Sidebar) --> */}
             <div className="text-center d-none d-md-inline">
                 <button className="rounded-circle border-0" id="sidebarToggle" onClick={handleToggleSidebar}></button>
-            </div>
-
-            {/* <!-- Sidebar Message --> */}
-            <div className="sidebar-card d-none d-lg-flex">
-                <img className="sidebar-card-illustration mb-2" src="../assets/img/undraw_rocket.svg" alt="..."/>
-                <p className="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a className="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
+            </div>  
 
         </ul>
         // <!-- End of Sidebar -->
