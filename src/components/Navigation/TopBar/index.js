@@ -1,10 +1,21 @@
 import React from 'react';
 
 function TopBar() {
+    const handleToggleSidebar = () => {
+        if ($(".sidebar").hasClass("toggled")) {
+            $(".sidebar").removeClass("toggled");
+            $(".nav-link").addClass("collapsed");
+        } else {
+            $(".sidebar").addClass("toggled");
+            $(".nav-link").addClass("collapsed");
+            $("#collapseUtilities").removeClass("show");
+        }
+    };
+
     return (
         // <!-- Topbar -->
         <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-            <button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3">
+            <button id="sidebarToggleTop" onClick={handleToggleSidebar} className="btn btn-link d-md-none rounded-circle mr-3">
                 <i className="fa fa-bars"></i>
             </button>
 

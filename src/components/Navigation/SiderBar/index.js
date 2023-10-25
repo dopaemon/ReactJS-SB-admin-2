@@ -1,6 +1,17 @@
 import React from 'react';
 
 function SiderBar() {
+    const handleToggleSidebar = () => {
+        if ($(".sidebar").hasClass("toggled")) {
+            $(".sidebar").removeClass("toggled");
+            $(".nav-link").addClass("collapsed");
+        } else {
+            $(".sidebar").addClass("toggled");
+            $(".nav-link").addClass("collapsed");
+            $("#collapseUtilities").removeClass("show");
+        }
+    };
+
     return (
         // <!-- Sidebar -->
         <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -114,7 +125,7 @@ function SiderBar() {
 
             {/* <!-- Sidebar Toggler (Sidebar) --> */}
             <div className="text-center d-none d-md-inline">
-                <button className="rounded-circle border-0" id="sidebarToggle"></button>
+                <button className="rounded-circle border-0" id="sidebarToggle" onClick={handleToggleSidebar}></button>
             </div>
 
             {/* <!-- Sidebar Message --> */}
