@@ -8,7 +8,21 @@
       "default",
       {
         "ignore": [
-          "meta[name=theme-color]"
+          "meta[name=theme-color]",
+          "script[referrerpolicy]"
+        ]
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-text-size-adjust",
+          "text-align: -webkit-match-parent",
+          "background-clip",
+          "-webkit-tap-highlight-color",
+          "text-decoration-skip-ink",
+          "-webkit-overflow-scrolling"
         ]
       }
     ]
